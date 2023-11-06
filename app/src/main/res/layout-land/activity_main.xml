@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="682dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linear_id"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTintMode="src_atop"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="328dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="55sp"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:paddingHorizontal="10dp"
+                    app:startIconDrawable="@drawable/email_icon"
+
+
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_id"
+                        android:layout_width="320dp"
+                        android:layout_height="55dp"
+                        android:inputType="textEmailAddress" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="328dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="center_vertical"
+                    android:hint="Password"
+                    android:paddingHorizontal="10dp"
+                    app:startIconDrawable="@drawable/lock_icon"
+app:endIconMode="password_toggle"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_id"
+                        android:layout_width="320dp"
+                        android:layout_height="55dp"
+                        android:backgroundTintMode="multiply"
+                        android:inputType="textMultiLine" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_id"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="15sp"
+                android:contentDescription="Image logo in login page"
+                android:src="@drawable/images"
+                tools:ignore="HardcodedText,ImageContrastCheck" />
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/button_id"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
